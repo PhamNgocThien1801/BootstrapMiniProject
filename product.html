@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectSWP302</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="icon" href="./images/word-image-1047.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+    
+<body>
+    <!-- <div class="row">
+    <div class="conteiner">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Hidden brand</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled"
+                      >Disabled</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex input-group w-auto">
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Type query"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-primary"
+                    type="button"
+                    data-mdb-ripple-color="dark"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+</div> -->
+    <div class="navbar-top">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <div class="container">
+                <div class="col-sm-2 nav-left">
+                    <div>
+                        <a class="navbar-brand " href="index.html">
+                            <p>NavBar</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-6 nav-fill">
+                    <form action="" id="search-box">
+                        <input type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                        <button id="search-btn" ><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="collapse navbar-collapse nav-right col-sm-4" id="Navbar">
+                    <ul class="navbar-nav col-sm-3">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
+                        <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
+                        <div class="sub-menu-nav row">
+                            <ul>
+                                <li>
+                                    <label href="#" for="btn">Producta
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-1">Productb
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-1">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-2">Productc
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-2">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-3">Productd
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-3">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-4">Producte
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-4">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="navbar-top-tablet">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <div class="container">
+                <div class="col-sm-2 nav-left">
+                    <div class="container ml-auto">
+                        <a class="navbar-brand " href="index.html">
+                            <p>NavBar</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-5 nav-fill">
+                    <form action="" id="search-box" style="width: 100%;">
+                        <input style="width:90%" type="text" id="search-text" placeholder="Tìm Con C*c gì tìm lẹ lên">
+                        <button id="search-btn" style="width: 10%;"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+
+                <div class="collapse navbar-collapse nav-right col-sm-5" id="Navbar">
+                    <ul class="navbar-nav col-sm-3">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html"> Home </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./product.html"> Product </a></1i>
+                        <li class="nav-item"><a class="nav-link" href="#"> Cart</a></li>
+                        <div class="sub-menu-nav row">
+                            <ul>
+                                <li>
+                                    <label href="#" for="btn">Producta
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-1">Productb
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-1">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-2">Productc
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-2">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-3">Productd
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-3">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label href="#" for="btn-4">Producte
+                                        <span class="fas fa-caret-down"></span>
+                                    </label>
+                                    <input type="checkbox" id="btn-4">
+                                    <ul class="sub-menu-mobile">
+                                        <li><a href="">product 1</a></li>
+                                        <li><a href="">product 2</a></li>
+                                        <li><a href="">product 3</a></li>
+                                        <li><a href="">product 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    </div>
+
+
+
+    <div class="menu container">
+        <div class="container">
+            <h2>Product</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 row order-last">
+                <div class="right-menu container">
+                    <ul class="row">
+                        <li class="col-6 col-sm-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a>
+                                        <img class="img-fluid" src="./images/peoduct1webp.webp" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Buy Now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-directory">IT</a>
+                                    <a href="" class="product-name">Computer</a>
+                                    <div class="product-price">2000vnđ</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-6 col-sm-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a>
+                                        <img class="img-fluid" src="./images/peoduct1webp.webp" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Buy Now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-directory">IT</a>
+                                    <a href="" class="product-name">Computer</a>
+                                    <div class="product-price">2000vnđ</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-6 col-sm-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a>
+                                        <img class="img-fluid" src="./images/peoduct1webp.webp" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Buy Now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-directory">IT</a>
+                                    <a href="" class="product-name">Computer</a>
+                                    <div class="product-price">2000vnđ</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-6 col-sm-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a>
+                                        <img class="img-fluid" src="./images/peoduct1webp.webp" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Buy Now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-directory">IT</a>
+                                    <a href="" class="product-name">Computer</a>
+                                    <div class="product-price">2000vnđ</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-6 col-sm-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a>
+                                        <img class="img-fluid" src="./images/peoduct1webp.webp" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Buy Now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-directory">IT</a>
+                                    <a href="" class="product-name">Computer</a>
+                                    <div class="product-price">2000vnđ</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-6 col-sm-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a>
+                                        <img class="img-fluid" src="./images/peoduct1webp.webp" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Buy Now</a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-directory">IT</a>
+                                    <a href="" class="product-name">Computer</a>
+                                    <div class="product-price">2000vnđ</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-menu col-sm-2 order-first">
+                <ul>
+                    <li>
+                        <a href="">Producta</a>
+                        <ul class="sub-menu">
+                            <li><a href="">product 1</a></li>
+                            <li><a href="">product 2</a></li>
+                            <li><a href="">product 3</a></li>
+                            <li><a href="">product 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Productb</a>
+                        <ul class="sub-menu">
+                            <li><a href="">product 1</a></li>
+                            <li><a href="">product 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Productc</a>
+                        <ul class="sub-menu">
+                            <li><a href="">product 1</a></li>
+                            <li><a href="">product 2</a></li>
+                            <li><a href="">product 3</a></li>
+                            <li><a href="">product 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Productd</a>
+                        <ul class="sub-menu">
+                            <li><a href="">product 1</a></li>
+                            <li><a href="">product 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Producte</a>
+                        <ul class="sub-menu">
+                            <li><a href="">product 1</a></li>
+                            <li><a href="">product 2</a></li>
+                            <li><a href="">product 3</a></li>
+                            <li><a href="">product 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <h1 style="text-align:center; color:tomato">CONTACT FOR WORK</h1>
+                </div>
+                <div class="row">
+                    <div class="user1 col-12 col-sm-4">
+                        <h3><b>Công ty trách nhiệm hữu hạn DEV-FPT </b></h3>
+                        <h5><b>Email: admin@fpt.edu.vn</b> </h5>
+                            <p style="font-size: 14px">
+                                <b>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ:</b> (Làm việc từ 08h00 - 21h00)<br>
+                            <table style="width: 296px;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 211px;">Gọi mua hàng</td>
+                                        <td style="width: 105px;"><strong>0946738325</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 211px;">Hỗ trợ khách hàng</td>
+                                        <td style="width: 105px;"><strong>0986345723</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 190px;">Địa chỉ</td>
+                                        <td style="width: 100px;"><strong>Đại học FPT</strong></td>
+                                    </tr>
+    
+                                </tbody>
+                            </table> 
+                        </p>
+                        </div>
+                    <div class="user2 col-12 col-sm-4">
+                        <h3 style="text-align:center;"><b>Social Networking</b></h3>
+                        <div class="socials-list">
+                            <a href="https://www.facebook.com"><i class="ti-facebook"></i></a>
+                            <a href="https://www.instagram.com"><i class="ti-instagram"></i></a>
+                            <a href="https://www.twitter.com"><i class="ti-twitter"></i></a>
+                            <embed type="image/jpg" src="images/16559573.jpg" width="278" height="150">
+                        </div>
+    
+                    </div>
+                    <div class="user3 col-12 col-sm-4">
+                        <h3 style="text-align:center;"><b>Mapping</b></h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.609941491696!2d106.80769431526062!3d10.841132860959357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752731176b07b1%3A0xb752b24b379bae5e!2sFPT%20University%20HCMC!5e0!3m2!1sen!2s!4v1653488538684!5m2!1sen!2s" width="450" height="214" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> 
+                    <p class="copyright">
+                        Powered <a href="https://www.youtube.com/watch?v=X-06s6cwFOQ">DEV-FPT</a>
+                    </p>
+                </div>
+            </div>
+            
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
